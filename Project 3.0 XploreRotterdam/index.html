@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3d113f5d53.js" crossorigin="anonymous"></script>
+    <title>Xplore Rotterdam</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Xplore Rotterdam</h2>
+            <div class="toggle"><i class="fas fa-bars"></i></div>
+        </header>
+        <video src="VideoSite3.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>You Must</h2>
+            <h3>Explore Rotterdam</h3>
+            <p>There’s never a dull moment in Rotterdam. This crowning jewel of the Dutch coastline is one of the most culturally diverse cities in the world- a fact that is reflected by its amazing art scene, clubs and cuisine. So, if you are heading south on your next trip to the Netherlands, make sure to check out the following guide to Rotterdam’s main cultural attractions.</p>
+            <a href="#">Explore</a>
+        </div>
+            <ul class="social">
+                <a href="https://www.facebook.com/ferdinand.gommers.7/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.linkedin.com/in/ferdinand-gommers/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="Home">HOME</a></li>
+            <li><a href="Rotterdam">ROTTERDAM</a></li>
+            <li><a href="Places">PLACES</a></li>
+            <li><a href="Covid19">COVID19</a></li>
+            <li><a href="Contact">CONTACT</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector(".toggle")
+        const showCase = document.querySelector(".showcase")
+
+        menuToggle.addEventListener("click", () => {
+            menuToggle.classList.toggle("active")
+            showCase.classList.toggle("active")
+        })
+    </script>
+</body>
+</html>
+
